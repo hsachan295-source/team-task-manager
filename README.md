@@ -1,26 +1,25 @@
-# 🚀 Team Task Manager (MERN Stack)
+# 🚀 Team Task Manager - Full Stack MERN Application
 
-A full-stack **Task Management Web Application** built using the **MERN Stack (MongoDB, Express, React, Node.js)** with authentication, project tracking, and a modern UI.
+A full-stack **Task Management Web Application** built using the **MERN Stack (MongoDB, Express, React, Node.js)**.
+This application allows users to manage projects and tasks efficiently with authentication, role-based access, and a modern UI.
 
 ---
 
 ## 🌐 Live Demo
 
-* 🔗 Frontend: https://your-frontend.vercel.app
-* 🔗 Backend API: https://team-task-manager-pxch.onrender.com
-
-> ⚠️ Deployment links will be updated soon.
+* 🔗 **Frontend:** https://team-task-manager-gamma-khaki.vercel.app
+* 🔗 **Backend API:** https://team-task-manager-pxch.onrender.com
 
 ---
 
 ## ✨ Features
 
-* 🔐 User Authentication (Register/Login using JWT)
-* 👥 Role-based Access (Admin & Member)
+* 🔐 User Authentication (JWT-based Register/Login)
+* 👥 Role-Based Access (Admin & Member)
 * 📊 Dashboard with Task Statistics
-* 📁 Project Management
+* 📁 Project Management System
 * ✅ Task Tracking (To Do / In Progress / Done)
-* ⏰ Due Dates & Priority Support
+* ⏰ Due Dates & Priority Management
 * 🎨 Modern UI (Tailwind CSS + Glassmorphism)
 * 📱 Fully Responsive Design
 
@@ -28,21 +27,21 @@ A full-stack **Task Management Web Application** built using the **MERN Stack (M
 
 ## 🛠️ Tech Stack
 
-**Frontend**
+### 🔹 Frontend
 
 * React.js (Vite)
 * Tailwind CSS
 
-**Backend**
+### 🔹 Backend
 
 * Node.js
 * Express.js
 
-**Database**
+### 🔹 Database
 
 * MongoDB (Mongoose)
 
-**Authentication**
+### 🔹 Authentication
 
 * JWT (JSON Web Token)
 
@@ -50,7 +49,7 @@ A full-stack **Task Management Web Application** built using the **MERN Stack (M
 
 ## 📂 Project Structure
 
-```bash id="p0j0zn"
+```
 team-task-manager/
  ├── backend/
  ├── frontend/
@@ -62,7 +61,7 @@ team-task-manager/
 
 ### 1️⃣ Clone Repository
 
-```bash id="wtc1h3"
+```
 git clone https://github.com/hsachan295-source/team-task-manager.git
 cd team-task-manager
 ```
@@ -71,14 +70,14 @@ cd team-task-manager
 
 ### 2️⃣ Backend Setup
 
-```bash id="xowb8l"
+```
 cd backend
 npm install
 ```
 
 Create `.env` file:
 
-```env id="4p8qxq"
+```
 PORT=5000
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
@@ -86,7 +85,7 @@ JWT_SECRET=your_secret_key
 
 Run backend:
 
-```bash id="m7m0z9"
+```
 npm run dev
 ```
 
@@ -94,7 +93,7 @@ npm run dev
 
 ### 3️⃣ Frontend Setup
 
-```bash id="1qkkdf"
+```
 cd frontend
 npm install
 npm run dev
@@ -106,24 +105,33 @@ npm run dev
 
 ### 🔹 Frontend (Vercel)
 
-* Connect GitHub repo
-* Select `frontend` folder
-* Click Deploy
+* Root Directory: `frontend`
+* Environment Variable:
+
+```
+VITE_API_URL=https://team-task-manager-pxch.onrender.com/api
+```
+
+---
 
 ### 🔹 Backend (Render)
 
-* Create new Web Service
-* Select `backend` folder
-* Add environment variables:
+* Root Directory: `backend`
+* Build Command: `npm install`
+* Start Command: `node src/server.js`
+* Environment Variables:
 
-  * MONGO_URI
-  * JWT_SECRET
+```
+MONGO_URI
+JWT_SECRET
+PORT=5000
+```
 
 ---
 
 ## 📸 Screenshots
 
-(Add project screenshots here after deployment)
+*(Add project screenshots here for better presentation)*
 
 ---
 
@@ -138,3 +146,4 @@ npm run dev
 ## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
+
