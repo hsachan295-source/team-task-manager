@@ -6,7 +6,7 @@ A modern and fully responsive **Task Management System** built using the **MERN 
 
 ## 🌐 Live Demo
 
-* 🔗 Frontend: https://your-frontend-link.vercel.app
+* 🔗 Frontend: https://team-task-manager-gamma-khaki.vercel.app/login
 * 🔗 Backend API: https://your-backend-link.onrender.com
 
 > ⚠️ Note: Replace links after deployment
